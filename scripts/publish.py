@@ -126,6 +126,8 @@ def publish(state, episodes, nxt, now):
         "yt_description": ep["yt_description"],
         "caption": ep["caption"],
         "fb_description": ep.get("fb_description", ep["caption"]),
+        "thumb_offset": int(ep.get("thumb_offset", 0)),   # IG ızgara kapağı = videonun son kartı
+        "vote_comment": ep.get("vote_comment", ""),        # yayın sonrası otomatik ilk yorum
     }
     print("Yayınlanıyor:", nxt, payload["video_url"])
     if DRY_RUN:
