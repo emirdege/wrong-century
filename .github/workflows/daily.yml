@@ -2,7 +2,8 @@ name: Daily episode
 
 on:
   schedule:
-    - cron: "0 16 * * *"   # her gün 16:00 UTC = 19:00 İstanbul / 11:00 New York
+    - cron: "0 14 * * *"    # 14:00 UTC = 17:00 Istanbul
+    - cron: "35 14 * * *"   # backup run if the episode is late
   workflow_dispatch:
     inputs:
       dry_run:
