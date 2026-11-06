@@ -19,6 +19,7 @@ PAGES_BASE = os.environ.get("PAGES_BASE", "").rstrip("/")
 PUBLISH_HOOK = os.environ.get("MAKE_PUBLISH_HOOK", "")
 COMMENTS_HOOK = os.environ.get("MAKE_COMMENTS_HOOK", "")
 DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
+DECIDE_ONLY = os.environ.get("DECIDE_ONLY", "0") == "1"  # sadece oy say, kararı state.json'a yaz
 MIN_HOURS_BETWEEN = float(os.environ.get("MIN_HOURS_BETWEEN", "20"))
 
 START_RE = re.compile(r"^\W*([ab])(?:\W|$)", re.I)          # "A", "b!!", "A for sure", "🅰️ A"
@@ -71,6 +72,8 @@ def main():
             return
         # Üretim görevi oyları önceden saydıysa onun kararını kullan (aynı videoyu üretti)
         if state.get("next"):
+            if DECIDE_ONLY:
+                print("Karar zaten var:", state["next"]); return
             nxt = state.pop("next")
             print(f"Önceden karar verilmiş: {last['id']} → {nxt}")
             return publish(state, episodes, nxt, now)
@@ -85,8 +88,18 @@ def main():
         last["votes"] = votes
         last["winner"] = winner
         nxt = episodes.get(last["id"], {}).get("next", {}).get(winner)
+        if not nxt:
+            n = int(re.match(r"E(\d+)", last["id"]).group(1)) + 1
+            nxt = f"E{n}{winner.lower()}"
         print(f"{last['id']} oyları: {votes} → {winner} → {nxt}")
+        if DECIDE_ONLY:
+            state["next"] = nxt
+            save(STATE, state)
+            print("Karar kaydedildi:", nxt)
+            return
     else:
+        if DECIDE_ONLY:
+            print("Henüz yayın yok; karar gerekmiyor."); return
         nxt = episodes.get("_start")
 
     return publish(state, episodes, nxt, now)
