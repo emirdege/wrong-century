@@ -61,6 +61,34 @@ def count_votes(text):
     return votes
 
 
+def parse_stats(txt):
+    """'yt_views=12' / 'ig_views=40' satırlarını sayıya çevirir (yayından ~23 saat sonraki anlık görüntü)."""
+    out = {}
+    for line in (txt or "").splitlines():
+        k, sep, v = line.strip().partition("=")
+        if sep and k and not k.startswith("ig_error"):
+            try:
+                out[k] = float(v) if "." in v else int(v)
+            except ValueError:
+                pass
+    return out
+
+
+def write_stats_table(state):
+    cols = ["yt_views", "yt_likes", "yt_comments", "ig_views", "ig_reach", "ig_likes", "ig_comments",
+            "ig_shares", "ig_saved", "ig_ig_reels_avg_watch_time"]
+    head = ["Bölüm", "Yayın", "Oy A", "Oy B"] + [c.replace("ig_ig_", "ig_") for c in cols]
+    rows = ["| " + " | ".join(head) + " |", "|" + "---|" * len(head)]
+    for p in state["published"]:
+        st, v = p.get("stats", {}), p.get("votes", {})
+        rows.append("| " + " | ".join([p["id"], p["at"][:16].replace("T", " "), str(v.get("A", "")), str(v.get("B", ""))]
+                                     + [str(st.get(c, "")) for c in cols]) + " |")
+    note = ("# İzlenme ve oy tablosu\n\nHer bölümün sayıları, yayından ~23 saat sonra (15:45 oy sayımında) alınır.\n"
+            "ig_reels_avg_watch_time milisaniyedir. Facebook izlenmesi API'den alınamadığı için yok.\n\n")
+    with open("stats.md", "w", encoding="utf-8") as f:
+        f.write(note + "\n".join(rows) + "\n")
+
+
 def main():
     state = load(STATE, {"published": []})
     episodes = load(EPISODES, {})
@@ -85,7 +113,10 @@ def main():
             txt = post(COMMENTS_HOOK, {"ig_media_id": last.get("instagram_id", ""),
                                        "fb_post_id": last.get("facebook_id", ""),
                                        "yt_video_id": last.get("youtube_id", "")}, timeout=300)
-            votes = count_votes(txt)
+            body, _, stats_txt = txt.partition("===STATS===")
+            votes = count_votes(body)
+            last["stats"] = parse_stats(stats_txt)
+            write_stats_table(state)
         winner = "B" if votes["B"] > votes["A"] else "A"   # eşitlikte A
         last["votes"] = votes
         last["winner"] = winner
