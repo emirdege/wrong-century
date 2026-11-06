@@ -16,6 +16,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATE = os.path.join(ROOT, "state.json")
 EPISODES = os.path.join(ROOT, "episodes.json")
 PAGES_BASE = os.environ.get("PAGES_BASE", "").rstrip("/")
+# Pages dağıtımı büyük medyada zaman aşımına düşebiliyor; videoyu doğrudan repodan ver.
+RAW_BASE = "https://raw.githubusercontent.com/" + os.environ.get("GITHUB_REPOSITORY", "emirdege/wrong-century") + "/main"
 PUBLISH_HOOK = os.environ.get("MAKE_PUBLISH_HOOK", "")
 COMMENTS_HOOK = os.environ.get("MAKE_COMMENTS_HOOK", "")
 DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
@@ -119,7 +121,7 @@ def publish(state, episodes, nxt, now):
         sys.exit(2)   # workflow kırmızı olur → e-posta bildirimi
 
     payload = {
-        "video_url": f"{PAGES_BASE}/{ep['file']}",
+        "video_url": f"{RAW_BASE}/{ep['file']}",
         "yt_title": ep["yt_title"],
         "yt_description": ep["yt_description"],
         "caption": ep["caption"],
