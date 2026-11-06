@@ -69,6 +69,11 @@ def main():
         if age_h < MIN_HOURS_BETWEEN:
             print(f"Son yayın {age_h:.1f} saat önce; bekleniyor.")
             return
+        # Üretim görevi oyları önceden saydıysa onun kararını kullan (aynı videoyu üretti)
+        if state.get("next"):
+            nxt = state.pop("next")
+            print(f"Önceden karar verilmiş: {last['id']} → {nxt}")
+            return publish(state, episodes, nxt, now)
         # oy sayımı
         votes = {"A": 0, "B": 0}
         if COMMENTS_HOOK and not DRY_RUN:
@@ -84,6 +89,10 @@ def main():
     else:
         nxt = episodes.get("_start")
 
+    return publish(state, episodes, nxt, now)
+
+
+def publish(state, episodes, nxt, now):
     if not nxt:
         print("Sıradaki bölüm tanımlı değil (sezon sonu ya da episodes.json eksik).")
         save(STATE, state)
