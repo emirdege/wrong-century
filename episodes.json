@@ -1,1 +1,33 @@
-{"_start":"E1","E1":{"file":"media/E1.mp4","next":{"A":"E2a","B":"E2b"},"yt_title":"You woke up in 1294. What do you do? 🐫 Wrong Century Ep.1 #shorts","yt_description":"Episode 1 — Wrong Century\nYou fell asleep in 2026. You woke up in a Silk Road caravanserai in Tabriz, 1294 — and a caravan master thinks you're his new guard.\n\n🗳️ Comment A or B — Episode 2 follows the vote.\nA = Play the guard · B = Run into the city\n\n📜 History note: Tabriz was the Ilkhanate's great trading hub, where Venetian, Genoese, Armenian and Persian merchants met.\n#WrongCentury #SilkRoad #InteractiveStory #History #ChooseYourPath","caption":"You fell asleep in 2026. You woke up in 1294. 🐫\n\nEpisode 1 — Comment A or B. The next episode follows the vote.\nA = Play the guard\nB = Run into the city\n\n#WrongCentury #SilkRoad #InteractiveStory #History #ChooseYourPath #timetravel"}}
+{
+  "_start": "E1",
+  "E1": {
+    "file": "media/E1.mp4",
+    "next": {
+      "A": "E2a",
+      "B": "E2b"
+    },
+    "yt_title": "You woke up in 1294. What do you do? 🐫 Wrong Century Ep.1 #shorts",
+    "yt_description": "Episode 1 — Wrong Century\nYou fell asleep in 2026. You woke up in a Silk Road caravanserai in Tabriz, 1294 — and a caravan master thinks you're his new guard.\n\n🗳️ Comment A or B — Episode 2 follows the vote.\nA = Play the guard · B = Run into the city\n\n📜 History note: Tabriz was the Ilkhanate's great trading hub, where Venetian, Genoese, Armenian and Persian merchants met.\n#WrongCentury #SilkRoad #InteractiveStory #History #ChooseYourPath",
+    "caption": "You fell asleep in 2026. You woke up in 1294. 🐫\n\nEpisode 1 — Comment A or B. The next episode follows the vote.\nA = Play the guard\nB = Run into the city\n\n#WrongCentury #SilkRoad #InteractiveStory #History #ChooseYourPath #timetravel"
+  },
+  "E2a": {
+    "file": "media/E2a.mp4",
+    "next": {
+      "A": "E3a",
+      "B": "E3b"
+    },
+    "yt_title": "The Khan just invented paper money 💸 Wrong Century Ep.2 #shorts",
+    "yt_description": "Episode 2 — Paper Money\nYou played the guard. Now the Khan's herald announces paper money — and refusing it is punishable by death.\n\n🗳️ Comment A or B — Episode 3 follows the vote.\nA = Spend it now · B = Save it\n\n📜 History note: In September 1294 the Ilkhan Gaykhatu introduced 'chao', paper money copied from Yuan China, in Tabriz. Merchants shut their shops and it was withdrawn within about two months.\n#WrongCentury #SilkRoad #InteractiveStory #History #ChooseYourPath",
+    "caption": "The Khan just invented paper money. You know exactly how this ends. 💸\n\nEpisode 2 — Comment A or B. The next episode follows the vote.\nA = Spend it now\nB = Save it\n\n#WrongCentury #SilkRoad #InteractiveStory #History #ChooseYourPath #economics"
+  },
+  "E2b": {
+    "file": "media/E2b.mp4",
+    "next": {
+      "A": "E3a",
+      "B": "E3b"
+    },
+    "yt_title": "The Khan just invented paper money 💸 Wrong Century Ep.2 #shorts",
+    "yt_description": "Episode 2 — Paper Money\nYou ran into Tabriz. Now the Khan's herald announces paper money — and refusing it is punishable by death.\n\n🗳️ Comment A or B — Episode 3 follows the vote.\nA = Spend it now · B = Save it\n\n📜 History note: In September 1294 the Ilkhan Gaykhatu introduced 'chao', paper money copied from Yuan China, in Tabriz. Merchants shut their shops and it was withdrawn within about two months.\n#WrongCentury #SilkRoad #InteractiveStory #History #ChooseYourPath",
+    "caption": "The Khan just invented paper money. You know exactly how this ends. 💸\n\nEpisode 2 — Comment A or B. The next episode follows the vote.\nA = Spend it now\nB = Save it\n\n#WrongCentury #SilkRoad #InteractiveStory #History #ChooseYourPath #economics"
+  }
+}
