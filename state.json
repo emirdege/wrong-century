@@ -5,7 +5,25 @@
       "at": "2026-11-06T14:45:17+00:00",
       "youtube_id": "2XsYZNGzH7I",
       "instagram_id": "18348480439285849",
-      "facebook_id": "28580322944997263"
+      "facebook_id": "28580322944997263",
+      "stats": {
+        "yt_views": 7,
+        "yt_likes": 0,
+        "yt_comments": 0,
+        "ig_views": 673,
+        "ig_reach": 461,
+        "ig_likes": 26,
+        "ig_comments": 14,
+        "ig_shares": 41,
+        "ig_saved": 6,
+        "ig_ig_reels_avg_watch_time": 9720
+      },
+      "votes": {
+        "A": 10,
+        "B": 3
+      },
+      "winner": "A"
     }
-  ]
+  ],
+  "next": "E2a"
 }
