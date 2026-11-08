@@ -5,4 +5,5 @@ ig_reels_avg_watch_time milisaniyedir. Facebook izlenmesi API'den alınamadığ�
 
 | Bölüm | Yayın | Oy A | Oy B | yt_views | yt_likes | yt_comments | ig_views | ig_reach | ig_likes | ig_comments | ig_shares | ig_saved | ig_reels_avg_watch_time |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| E1 | 2026-11-06 14:45 |  |  | 7 | 0 | 0 | 673 | 461 | 26 | 14 | 41 | 6 | 9720 |
+| E1 | 2026-11-06 14:45 | 10 | 3 | 7 | 0 | 0 | 673 | 461 | 26 | 14 | 41 | 6 | 9720 |
+| E2a | 2026-11-07 14:09 |  |  | 3 | 0 | 0 | 235 | 184 | 8 | 2 | 1 | 0 | 4431 |
