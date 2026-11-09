@@ -58,5 +58,17 @@
     "caption": "Night one on the Silk Road. Freezing. And there's a lighter in your pocket nobody here has ever seen. 🔥\n\nEpisode 3 — Comment A or B. The next episode follows the vote.\nA = Use the lighter\nB = Keep the secret\n\n#WrongCentury #SilkRoad #InteractiveStory #History #ChooseYourPath #survival",
     "vote_comment": "🗳️ Your call: 🅰️ USE THE LIGHTER or 🅱️ KEEP THE SECRET — comment A or B 👇 Episode 4 follows the vote!",
     "thumb_offset": 47600
+  },
+  "E4a": {
+    "file": "media/E4a.mp4",
+    "next": {
+      "A": "E5a",
+      "B": "E5b"
+    },
+    "yt_title": "Bandits on the Silk Road. And you're the guard. ⚔️ Wrong Century Ep.4 #shorts",
+    "yt_description": "Episode 4 — Stones From Above\nYou used the lighter. A freezing boy got warm, and Faraj saw everything. Two days later, in a mountain pass near Miyane, bandits roll stones down onto the caravan. You have a sword you can't hold, and a phone at 23%.\n\n🗳️ Comment A or B — Episode 5 follows the vote.\nA = Fight with the sword · B = Use the phone\n\n📜 History note: In Ilkhanid Iran, mountain passes were a favourite place for ambushes: bandits, often army deserters and outlaws, rolled stones down on caravans from above. Road patrols called tangaul guarded the routes.\n#WrongCentury #SilkRoad #InteractiveStory #History #ChooseYourPath",
+    "caption": "Bandits on the ridge. Stones falling. And you're the guard who can't hold a sword. ⚔️📱\n\nEpisode 4 — Comment A or B. The next episode follows the vote.\nA = Fight with the sword\nB = Use the phone\n\n#WrongCentury #SilkRoad #InteractiveStory #History #ChooseYourPath #bandits",
+    "vote_comment": "🗳️ Your call: 🅰️ FIGHT WITH SWORD or 🅱️ USE THE PHONE — comment A or B 👇 Episode 5 follows the vote!",
+    "thumb_offset": 48600
   }
 }
