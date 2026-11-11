@@ -82,5 +82,17 @@
   "caption": "The man you're pretending to be just rode in. 🐎 And your seven paper notes just became worthless. 📜\n\nEpisode 5 — Comment A or B. The next episode follows the vote.\nA = Confess, become Hovhannes's apprentice\nB = Pay Arslan off\n\n#WrongCentury #SilkRoad #InteractiveStory #History #ChooseYourPath #papermoney",
   "vote_comment": "🗳️ Your call: 🅰️ BECOME APPRENTICE or 🅱️ PAY ARSLAN OFF — comment A or B 👇 Episode 6 follows the vote!",
   "thumb_offset": 58000
+ },
+ "E6a": {
+  "file": "media/E6a.mp4",
+  "next": {
+   "A": "E7a",
+   "B": "E7b"
+  },
+  "yt_title": "One question at the city gate. And you can't answer it. 🐪 Wrong Century Ep.6 #shorts",
+  "yt_description": "Episode 6 — Qazvin Gate\nYou confessed. Arslan got his spear and his job back, and Hovhannes took you on as his apprentice. Now the caravan reaches the gate of Qazvin, where officials count every bale and every camel. Bahram haggles the tax down. Then the official asks where you are from. You say Istanbul. He hears Constantinople. And your phone clock is still frozen at 3:17.\n\n🗳️ Comment A or B — Episode 7 follows the vote.\nA = Lie that you're Hovhannes's cousin · B = Let Bahram pay a bribe for you\n\n📜 History note: In the Ilkhanate, goods were taxed with the tamgha, a levy of roughly 3 to 10 percent collected on trade and at city gates. Caravan masters were expected to negotiate customs for the whole caravan.\n#WrongCentury #SilkRoad #InteractiveStory #History #ChooseYourPath",
+  "caption": "Where are you from? 🐪 Wrong answer: Istanbul. In 1294, that sounds like Constantinople.\n\nEpisode 6 — Comment A or B. The next episode follows the vote.\nA = Lie that you're Hovhannes's cousin\nB = Let Bahram pay a bribe for you\n\n#WrongCentury #SilkRoad #InteractiveStory #History #ChooseYourPath #tamgha",
+  "vote_comment": "🗳️ Your call: 🅰️ HOVHANNES'S COUSIN or 🅱️ BAHRAM PAYS BRIBE — comment A or B 👇 Episode 7 follows the vote!",
+  "thumb_offset": 55699
  }
 }
