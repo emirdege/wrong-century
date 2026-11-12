@@ -140,7 +140,25 @@
       "facebook_id": "3411976162339243",
       "ig_comment": "18121117175066366",
       "fb_comment": "122150712471219110_1808498517125270",
-      "yt_comment_status": "0"
+      "yt_comment_status": "0",
+      "stats": {
+        "yt_views": 15,
+        "yt_likes": 0,
+        "yt_comments": 0,
+        "ig_views": 140,
+        "ig_reach": 106,
+        "ig_likes": 2,
+        "ig_comments": 1,
+        "ig_shares": 0,
+        "ig_saved": 0,
+        "ig_ig_reels_avg_watch_time": 2522
+      },
+      "votes": {
+        "A": 0,
+        "B": 0
+      },
+      "winner": "A"
     }
-  ]
+  ],
+  "next": "E7a"
 }
