@@ -145,13 +145,13 @@
         "yt_views": 15,
         "yt_likes": 0,
         "yt_comments": 0,
-        "ig_views": 202,
-        "ig_reach": 162,
+        "ig_views": 203,
+        "ig_reach": 163,
         "ig_likes": 2,
         "ig_comments": 1,
         "ig_shares": 0,
         "ig_saved": 0,
-        "ig_ig_reels_avg_watch_time": 2241
+        "ig_ig_reels_avg_watch_time": 2236
       },
       "votes": {
         "A": 0,
@@ -160,5 +160,6 @@
       "winner": "A"
     }
   ],
-  "waiting_for": "E7a"
+  "waiting_for": "E7a",
+  "next": "E7a"
 }
